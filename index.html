@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winzo Reward ₹4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Winzo Reward ₹4</h1>
+    
+    <button class="download-btn" id="downloadBtn">Download App to Claim Reward</button>
+    
+    <div class="reward-form" id="rewardForm">
+        <h2>Claim Your ₹4 Reward</h2>
+        <form id="claimForm">
+            <div class="form-group">
+                <label for="phone">10-digit Phone Number</label>
+                <input type="text" id="phone" placeholder="Enter your phone number">
+                <div class="error" id="phoneError">Please enter a valid 10-digit phone number</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="upi">UPI ID</label>
+                <input type="text" id="upi" placeholder="Enter your UPI ID (e.g., name@upi)">
+                <div class="error" id="upiError">Please enter a valid UPI ID (must contain @)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="screenshot">Upload Screenshot (Image only)</label>
+                <input type="file" id="screenshot" accept="image/*">
+                <div class="error" id="screenshotError">Please upload an image file</div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Claim</button>
+        </form>
+    </div>
+    
+    <div class="success-message" id="successMessage">
+        ✅ Your reward will be credited within 24 hours!
+    </div>
+    
+    <div class="instructions">
+        <h2>How to Claim Your Reward:</h2>
+        <ol>
+            <li>Click the download button above to install the Winzo app</li>
+            <li>After installation, the claim form will appear</li>
+            <li>Fill in your 10-digit phone number</li>
+            <li>Enter your valid UPI ID (must contain @)</li>
+            <li>Upload a screenshot of your app installation</li>
+            <li>Submit the form and wait for your ₹4 reward!</li>
+        </ol>
+        <p><strong>Note:</strong> Reward will be credited to your UPI ID within 24 hours of successful submission.</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
